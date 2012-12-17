@@ -93,5 +93,5 @@ if __name__ == '__main__':
 	name = sys.argv[2]
 	TXTRecord = { sys.argv[3]: sys.argv[4] }
 
-	main(path = path, name = name, TXTRecord = TXTRecord)
+	main(path = path, name = name, TXTRecord = TXTRecord, address = '0.0.0.0')
 
