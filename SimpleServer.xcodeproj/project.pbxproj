@@ -13,7 +13,21 @@
 		4577A7D5167FBA47003F614E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4577A7D3167FBA47003F614E /* Credits.rtf */; };
 		4577A7D8167FBA47003F614E /* CAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4577A7D7167FBA47003F614E /* CAppDelegate.m */; };
 		4577A7DB167FBA47003F614E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4577A7D9167FBA47003F614E /* MainMenu.xib */; };
+		4577A7E4167FBF86003F614E /* quick_serve.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4577A7E1167FBE6D003F614E /* quick_serve.py */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4577A7E3167FBF72003F614E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 12;
+			files = (
+				4577A7E4167FBF86003F614E /* quick_serve.py in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4577A7C0167FBA46003F614E /* SimpleServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +43,7 @@
 		4577A7D6167FBA47003F614E /* CAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAppDelegate.h; sourceTree = "<group>"; };
 		4577A7D7167FBA47003F614E /* CAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAppDelegate.m; sourceTree = "<group>"; };
 		4577A7DA167FBA47003F614E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4577A7E1167FBE6D003F614E /* quick_serve.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = quick_serve.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +100,7 @@
 				4577A7D6167FBA47003F614E /* CAppDelegate.h */,
 				4577A7D7167FBA47003F614E /* CAppDelegate.m */,
 				4577A7D9167FBA47003F614E /* MainMenu.xib */,
+				4577A7E1167FBE6D003F614E /* quick_serve.py */,
 				4577A7CB167FBA47003F614E /* Supporting Files */,
 			);
 			path = SimpleServer;
@@ -112,6 +128,7 @@
 				4577A7BC167FBA46003F614E /* Sources */,
 				4577A7BD167FBA46003F614E /* Frameworks */,
 				4577A7BE167FBA46003F614E /* Resources */,
+				4577A7E3167FBF72003F614E /* CopyFiles */,
 			);
 			buildRules = (
 			);
