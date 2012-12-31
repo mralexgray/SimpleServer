@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4516506D1692202D00E2DC62 /* CFileDragDestinationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4516506C1692202D00E2DC62 /* CFileDragDestinationView.m */; };
+		45165070169220A200E2DC62 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4516506F169220A200E2DC62 /* QuartzCore.framework */; };
 		4577A7C5167FBA47003F614E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4577A7C4167FBA47003F614E /* Cocoa.framework */; };
 		4577A7CF167FBA47003F614E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4577A7CD167FBA47003F614E /* InfoPlist.strings */; };
 		4577A7D1167FBA47003F614E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4577A7D0167FBA47003F614E /* main.m */; };
@@ -30,6 +32,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4516506B1692202D00E2DC62 /* CFileDragDestinationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFileDragDestinationView.h; sourceTree = "<group>"; };
+		4516506C1692202D00E2DC62 /* CFileDragDestinationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFileDragDestinationView.m; sourceTree = "<group>"; };
+		4516506F169220A200E2DC62 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4577A7C0167FBA46003F614E /* SimpleServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4577A7C4167FBA47003F614E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		4577A7C7167FBA47003F614E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -51,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45165070169220A200E2DC62 /* QuartzCore.framework in Frameworks */,
 				4577A7C5167FBA47003F614E /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,6 +84,7 @@
 		4577A7C3167FBA47003F614E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4516506F169220A200E2DC62 /* QuartzCore.framework */,
 				4577A7C4167FBA47003F614E /* Cocoa.framework */,
 				4577A7C6167FBA47003F614E /* Other Frameworks */,
 			);
@@ -99,6 +106,8 @@
 			children = (
 				4577A7D6167FBA47003F614E /* CAppDelegate.h */,
 				4577A7D7167FBA47003F614E /* CAppDelegate.m */,
+				4516506B1692202D00E2DC62 /* CFileDragDestinationView.h */,
+				4516506C1692202D00E2DC62 /* CFileDragDestinationView.m */,
 				4577A7D9167FBA47003F614E /* MainMenu.xib */,
 				4577A7E1167FBE6D003F614E /* quick_serve.py */,
 				4577A7CB167FBA47003F614E /* Supporting Files */,
@@ -186,6 +195,7 @@
 			files = (
 				4577A7D1167FBA47003F614E /* main.m in Sources */,
 				4577A7D8167FBA47003F614E /* CAppDelegate.m in Sources */,
+				4516506D1692202D00E2DC62 /* CFileDragDestinationView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +325,7 @@
 				4577A7E0167FBA47003F614E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

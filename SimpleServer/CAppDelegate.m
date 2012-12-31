@@ -8,7 +8,10 @@
 
 #import "CAppDelegate.h"
 
+#import "CFileDragDestinationView.h"
+
 @interface CAppDelegate ()
+@property (readwrite, nonatomic, assign) IBOutlet CFileDragDestinationView *fileDragDestinationView;
 @property (readwrite, nonatomic, copy) NSString *bonjourName;
 @property (readwrite, nonatomic, strong) NSURL *directoryURL;
 @property (readwrite, nonatomic, copy) NSString *indexName;
@@ -45,6 +48,28 @@
 	[[NSUserDefaults standardUserDefaults] setObject:self.bonjourName forKey:@"bonjourName"];
 	[[NSUserDefaults standardUserDefaults] setObject:self.indexName forKey:@"indexName"];
 	[[NSUserDefaults standardUserDefaults] synchronize];
+	}
+
+- (void)awakeFromNib
+	{
+	self.fileDragDestinationView.dragHandler = ^(NSURL *inURL) {
+
+		id theValue = NULL;
+		[inURL getResourceValue:&theValue forKey:NSURLIsDirectoryKey error:NULL];
+		if ([theValue boolValue] == YES)
+			{
+			self.directoryURL = inURL;
+			self.bonjourName = [[[NSFileManager defaultManager] displayNameAtPath:inURL.path] stringByDeletingPathExtension];
+			self.indexName = NULL;
+			}
+		else
+			{
+			self.directoryURL = [inURL URLByDeletingLastPathComponent];
+			self.bonjourName = [[[NSFileManager defaultManager] displayNameAtPath:inURL.path] stringByDeletingPathExtension];
+			self.indexName = [inURL lastPathComponent];
+			}
+
+		};
 	}
 
 - (IBAction)choose:(id)inSender
